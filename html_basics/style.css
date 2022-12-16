@@ -1,0 +1,83 @@
+section {
+    background-image: url("image/controller.png");
+    background-repeat: no-repeat;
+    padding-bottom: 700px;
+    text-align: center;
+    
+    
+    
+}
+.Product th{
+    border: 2px solid black;
+    width: 100px;
+    background-color: #ff000f;
+    
+
+}
+.Product tr td{
+    border: 4px solid yellow;
+    border-collapse: collapse;
+    border-color: #ff000f;
+    background-color: aqua;
+    border-radius: 10px;
+    
+    
+}
+.Product .doted td{ 
+    border-style: dotted;
+    border-color: yellow;
+}
+
+.Product .dash td{ 
+    border-style: dotted;
+    border-color: black;
+
+}
+
+.Product .solid td{ 
+    border-style: solid;
+    border-color: black;
+
+}
+
+.Product .double td{ 
+    border-style: double;
+    border-color: black;
+
+}
+
+.Product #groove td{ 
+    border-style: groove;
+ 
+}
+
+.Product #ridge td{ 
+    border-style: ridge;
+ 
+}
+
+.Product #insert td{ 
+    border-style: inset;
+    
+ 
+}
+
+.Product #outset td{ 
+    border-style: outset;
+    
+}
+.Product #none td{ 
+    border-style: none;
+    
+}
+.Product #hidden td{ 
+    border-style: hidden;
+    
+}
+.Product thead tr th{
+    td:nth-child(odd);
+    background-color: white;
+}
+
+
+ 
