@@ -236,12 +236,177 @@ background image behaves.
         <td>50</td>
     </tr>
 
-</table>
+</table><hr>
 
+<!--HTML FORMS START-->
+<form>
+    <p>
+        You can fill the text inside
+    </p>
+    <laebe for = "fname">Enter your first Name</laebe><br>
+    <input type = "text" id="fname" name="fname" ><br>
+    
+    <laebe for = "lname">Enter your Last Name</laebe><br>
+    <input type = "text" id="lname" name="Lname" ><br><hr color="black">  
+    
+    <p>
+        Choose your favourite Web language with the help of radio tupe
+    </p>
+    <input type = "radio" id="html" name="favourite_language" value="HTML" >
+    <laebe for = "html">HTML</laebe><br>
+    
+    <input type = "radio" id="css" name="favourite_language" value="CSS" >
+    <laebe for = "css">CSS</laebe><br>
+
+    <input type = "radio" id="javascript" name="favourite_language" value="JavaScript" >
+    <laebe for = "JavaScript">JavaScript</laebe><br><hr color="black">
+
+    <p>
+        Choose your favourite option with the help of checkbox tupe
+    </p>
+    <input type = "checkbox" id="vehicle1" name="vehicle1" value="Bike" >
+    <laebe for = "vehicle1">I have a Bike</laebe><br>
+    
+    <input type = "checkbox" id="vehicle2" name="vehicle2" value="Car" >
+    <laebe for = "vehicle2">I have a Car</laebe><br>
+
+    <input type = "checkbox" id="vehicle3" name="vehicle3" value="Boat" >
+    <laebe for = "vehicle3">I have a Boat</laebe><br><hr color="black">
+
+    <p>
+        You can fill the text inside with the help of submit button
+    </p>
+    <laebe for = "fname">Enter your first Name</laebe><br>
+    <input type = "text" id="fname" name="fname" value="John" ><br>
+    
+    <laebe for = "lname">Enter your Last Name</laebe><br>
+    <input type = "text" id="lname" name="Lname" value="Doe" ><br><br>  
+
+    <input type="submit" value="submit"><br><br>
+
+    <!--HTML <INPUT> ELEMENT -->
+
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fnamr" value="John"><br><br>
+
+        <label for="cars"> Choose a cars :</label><br>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            <input type="submit"><br><br>
+        </select>
+            <!--using size attributes-->
+        <label for="cars"> Choose a cars :</label><br>
+        <select id="cars" name="cars" size="2">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            <input type="submit"><br><br>
+        </select>
+        <!--using multiple attributes their giving choose more than one option-->
+        <label for="cars"> Choose a cars :</label><br>
+        <select id="cars" name="cars" size="4" multiple>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+            <input type="submit"><br><br>
+        </select>
+
+        <!--textarea using example-->
+        <textarea name="message" rows="10" cols="30">This is a message area so put your message in this check box</textarea><br><br>
+
+        <!--Botton example-->
+        <button type="button" onclick = "alert('Hello World!')">click Me!</button><br><br>
+
+        <!--fieldset and legend example-->
+
+        <fieldset>
+            <legend>Personality:</legend>
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+
+            <input type="submit" value="submit">
+        </fieldset><br><br>
+
+        
+        <p>input type is list and create datalist and add option in and last in submit</p>
+        <input list="browser">
+        <datalist id="browser">
+            <option value="Firefox"></option>
+            <option value="Internet Explorer"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+        </datalist>
+        <input type="submit">
+
+        <p> output element is represent the result of a calculation</p>
+        <output=" x.value= parseInt(a.value) + parseInt(b.value)"></output>
+        <input type="range" id="a" name="a" value="50">
+        <input type="number" id="b" name="b" value="50">
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+
+        <h3>input type is reset</h3>
+        <laebe for = "fname">Enter your first Name</laebe><br>
+    <input type = "text" id="fname" name="fname" ><br>
+    
+    <laebe for = "lname">Enter your Last Name</laebe><br>
+    <input type = "text" id="lname" name="Lname" ><br>
+
+    <input type="submit">
+    <input type="reset"> <br><br>
+
+    <h3>input type is color</h3>
+    <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor"><br>
+  <input type="submit"><br><br>
+
+  <h3>input type is date</h3>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+
+
+
+
+
+        
+    
+
+
+</form>
+
+<!--HTML MEDIA STARTED-->
+
+<h3>video tag example</h3>
+<video width="320" height="240" controls autoplay muted>
+    <source src="video.mp4.mp4" type="video/mp4"><!--video formate which can use is-->
+    <source src="video.mp4.mp4" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+  <h3>audio tag example</h3>
+  <audio controls autoplay muted>
+    <source src="sound.mp3.mp3" type="audio/mp3"> 
+    <source src="sound.mp3.mp3" type="audio/mp4">
+
+  </audio>
+
+  <h3> use iframes and add video use of you tube</h3>
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/07d2dXHYb94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
     
-    
+  <p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
+
 
 
 
