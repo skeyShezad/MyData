@@ -1,0 +1,131 @@
+
+*{ 
+    box-sizing: border-box;
+
+}
+body {
+background-color: lightblue;
+
+}
+hr{
+    border: 1px solid black;
+    border-width: 4px  ;
+}
+h1{
+    font-family: Verdana;
+    color: white;
+    text-align: center;
+    /* background-color: tomato; */
+    background-color: rgba(255, 80, 85, 0.5); 
+/* /* this is a use of rgb/* */
+}
+P{
+    font-family: verdana;
+    text-align: center;
+    color: black;
+    background-color: #f5f;
+    border-top-style: dotted;
+    border-right-style: outset;
+    border-bottom-style: double;
+    border-left-style: initial;
+    
+
+}
+.dotted{
+    border-style: dotted;
+    border-color: red;
+    
+}
+.dashed{
+    border-style: dashed;
+    border-color: blue  ;
+    border-width: 5px 20px;
+}
+.solid1{
+    border-style: solid;
+    background-color: antiquewhite;
+    border-width: 20px 5px;
+}
+.solid2{
+    border-style: solid;
+    background-color: antiquewhite;
+    border-width: 25px 10px 4px 35px;  /*25px top, 10px right, 4px bottom and 35px left*/
+}
+.double{
+    border-style: double;
+    background-color: darkgreen;
+    
+}
+.groove{
+    border-style: groove;
+    background-color: royalblue;
+}
+.ridge{
+    border-style: ridge;
+    background-color: blue;
+}
+.inset{
+    border-style: inset;
+    background-color: yellow;
+}
+.outset{
+    border-style: outset;
+    background-color: cornflowerblue;
+    border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+}
+.none{
+    border-style: none;
+    background-color: aquamarine;
+    border-radius: 5px;
+    
+
+}
+.hidden{
+    border-style: hidden;
+    background-color: azure;
+    border-radius: 10px;
+    
+}
+.border{
+    border-bottom: 5px solid black;
+}
+.margin {
+    margin-top: 25px;
+    margin-right: 50px;
+    margin-bottom: 75px;
+    margin-left: 100px;
+    border: 2px dotted red;
+    
+
+}
+h3{
+    margin: 50px;
+}
+h4{
+    margin: 20px;
+}
+
+.padding{
+
+    border: 1px solid black;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+   
+}
+.padding{
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+}
+
+.max-width {
+    border: 1px solid black;
+
+    max-width: 500px;
+    height: 100px;
+}
+
+
+
