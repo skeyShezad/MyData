@@ -9,7 +9,7 @@ background-color: lightblue;
 }
 hr{
     border: 1px solid black;
-    border-width: 4px  ;
+    border-width: 3px  ;
 }
 h1{
     font-family: Verdana;
@@ -23,11 +23,11 @@ P{
     font-family: verdana;
     text-align: center;
     color: black;
-    background-color: #f5f;
+    /* background-color: #f5f;
     border-top-style: dotted;
     border-right-style: outset;
     border-bottom-style: double;
-    border-left-style: initial;
+    border-left-style: initial; */
     
 
 }
@@ -127,5 +127,144 @@ h4{
     height: 100px;
 }
 
+   
+img{
+    width: 100%;
+    height: 100%;    
+}
+
+    
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+    font-size: 25px;
+   
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+  .hoverdiv{
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    
+  }
+.hoverdiv:hover{
+    background-color: blue;
+}
+
+.paragraph{
+    display: none;
+    background-color: yellow;
+    padding: 25px;
+}
+
+ /* .hover p:hover{
+    background-color: ;
+    padding: 10px;   
+} */
+.firstchild   p:first-child{
+    color: aqua;
+    font-size: large;
+}
+.firstchild + p {
+    color: brown;
+    
+}
+
+.firstline p::first-line{
+    color : blue;
+    font-variant: small-caps;
+}
+.firstletter p::first-letter{
+    color : red;
+    /* font-size:xx-large; */
+    font-size: 200%;
+    
+}
+
+.multiplePseudo p::first-letter{
+    color: red;
+    font-size: xx-large;
+}
+.multiplePseudo p::first-line{
+    color: blue;
+}
+
+h6::after{
+content: url();
+
+}
+
+::marker{
+    color: red;
+    font-size: 30px;
+}
+
+.selection p::selection{
+    color: yellow;
+}
+
+.selector a[target] {
+    background-color: yellow;
+}
+
+.cssboxmodels{
+    background-color: lightgray;
+    max-width: 100%;
+    border: 2px solid green;
+    padding: 50px;
+    margin: 20px;
+
+}
+.cssoutline{
+    border: 2px solid black;
+    outline: 10px solid green;
+
+}
+
+.offset p{
+    border: 1px solid black;
+    outline: 1px solid red;
+    outline-offset: 15px;
+    margin: 30px;
+    background-color: yellow;
+    text-decoration-style: wavy ;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px red;
+    font-family: verdana, sans-serif; /*combination of sans-serif and verdana font monbination  and also georgia, serif*/
+}
+
+.cssfont .serif{
+    font-family: serif;
+}
+.cssfont .sans-serif{
+    font-family: sans-serif;
+}
+
+.cssfont .monospace{
+    font-family: monospace;
+}
+.cssfont .cursive{
+    font-family: cursive;
+}
+.cssfont .fantacy{
+    font-family: fantacy;
+} 
+    
 
 
