@@ -265,6 +265,78 @@ content: url();
 .cssfont .fantacy{
     font-family: fantacy;
 } 
+
+section a{
+color: white;
+
+}
     
+table {
+    
+    width: 100%;
+    border-collapse: collapse;
+    /* text-align: center;
+    /* text-align: right;
+    vertical-align: bottom; */ 
+
+}
+th, td {
+    
+    border: 2px solid red;
+    padding: 15px ;
+    
+    
+}
+th{
+    height: 70px;
+    text-align: center;
+    background-color: aquamarine;
+   
+}
+tr:nth-child(odd){
+    background-color: darkgray;
+}
+
+tr:hover{
+    background-color: black;
+    color: white;
+}
+
+.table2:nth-child(odd){
+    border-collapse: collapse;
+    width: 100%;
+
+}
+.width{
+    width: 500px;
+    margin: auto;
+    border: 3px solid green;
+}
+.max-width{
+    max-width: 500px;
+    margin: auto;
+    border: 3px solid green;
+   
+}
+
+.clearfix{
+    width: 33.33%;
+    float: left;
+    padding: 50px;
+    
+}
+.img-container{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 
 
