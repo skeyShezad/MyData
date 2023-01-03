@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=text], select, textarea{
+
+width: 100%;
+padding: 12px 15px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+
+}
