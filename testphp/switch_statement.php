@@ -32,7 +32,7 @@
 
 
 // in switch statemem use conditional statement 
-$age = 30;
+$age = 15;
 
 switch (true) {
 
