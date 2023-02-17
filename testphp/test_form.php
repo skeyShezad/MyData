@@ -1,13 +1,15 @@
 <?php
 
 // (1).odd or even number 
-$number =10; 
+$number =99; 
 if($number%2==0){
 echo "number is even"."<br>";
 }else{
     echo "number is odd"."<br>";
 }
 
+$checkNum = $number % 2 == 0  ? "The entered number $number is an even number " : "The entered number $number is an odd number " ;
+echo $checkNum. "<br>";
 //(2)string is a palindrom or not 
 
 function palindrom_or_not($string){
@@ -22,18 +24,31 @@ echo palindrom_or_not('shezad');
 
 
 
-
-
 //(3). FIND THE LARGEST NUMBER IN ARRAY
 
-$larnum = [23, 43, 1, 67];
+$larnum = [23, 43, 1, 67,-50];
 echo "Max number is : ".max($larnum)."<br>";
 
 
 
 //(4). Count the number of vowels in a string
+$string1 = "ali is good boy";
+$vovel = array ('a', 'e', 'i', 'o', 'u');
+$len = strlen($string1);
+$num = 0;
 
-
+for($i = 0; $i < $len; $i++){
+    if(in_array($string1[$i], $vovel)){
+        $num++;
+    }
+    // echo "num <br>";
+    
+}
+// function countDigits( $string1 ){
+//     return preg_match_all("/[0-9]/",$string1);
+// }
+// substr_count($string1, ' ');
+echo "number of vowels : ". $num. "<br>";
 
 
 
@@ -48,7 +63,7 @@ echo "string reverse is : ".strrev($str)."<br>";
 
 
 //(6).Check if a given number is prime.
-
+//issue for break.
 function isprime($prime){
 for($i = 2; $i < $prime; $i++){
 if($prime % $i == 0){
@@ -84,23 +99,21 @@ echo "<pre>";
 
 //(9)Find the second smallest number in an array.
 
-// $arr = array(22, 34, 1,  56, 67);
-// $arr = [34, 7, 2, 12, 1, 0];
-// // echo sort($arr);
-// $newarray = sort($arr);
-// // print_r($newarray);
-// $secoundsmall = next($newarray); 
-// print_r($secoundsmall);   
-// // print_r($ssmall);
-// // (sort($arr = $arr+$n));
 
-// //echo "next : ". next($a). "<br>";
-// function secound_small($ssmall){
-//     if()
-// }
+ $arr1 = [34, 7, 2, 12, 3, 0];
+ sort($arr1);
+ echo "secound small number is : ". $arr1[1]. "<br>";
+  
 
 
+//(10) Check if a given string is a valid email address
 
+$email = "shezadluhar@gmail.com";
+if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+echo ("$email is a valid email");
+}else{
+    echo ("$email is not a  valid email");
+}
 
 
 ?>
