@@ -57,8 +57,11 @@ echo "number of vowels : ". $num. "<br>";
 
 //(5).Reverse the order of words in a string.
 
-$str = "hello friends!";
-echo "string reverse is : ".strrev($str)."<br>";
+// $str = "hello friends!";
+// echo "string reverse is : ".strrev($str)."<br>";
+$str = "shezad";
+$revstr = "";
+$count = strlen($str)-1;
 
 
 
