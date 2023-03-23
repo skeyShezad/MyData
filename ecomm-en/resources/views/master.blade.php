@@ -13,7 +13,8 @@
     @yield('content')
     {{ View::make('footer') }}
 
-    
+
+
 </body>
 
 <style>
@@ -21,8 +22,27 @@
         height: 500px;
         padding-top: 100px;
     }
-
-
+    img.slider-img{
+        height: 300px !important;
+        /* background-color: black; */
+    }
+    .custom-product{
+        height: 600px
+    }
+    .slider-text{
+        color: #24465454 !important;
+    }
+    .trending-img{
+        height: 100px
+    }
+    .trending-items{
+        float: left;
+        width: 25%
+    }
+    .trending-wrapper{
+        margin: 20px;
+        
+    }
 
 </style>
 </html>
